@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>まふまふ Official Website</title>
+
+  <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <!-- Google Fontの指定 -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Philosopher">
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Aguafina+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="flickitys/flickity.css">
+  <!-- JavaScriptの読み込み -->
+	  <script src="flickitys/flickity.pkgd.js"></script>
+  </head>
+
+  <body>
+  <!-- header -->
+    <header class="index-header">
+      <div class="home-logo wrapper">
+        <a href="index.html"><img src="images/index/img_beru_all.png" alt="header-logo" style="width:81px; height:80px; margin-right: 12px;"><img src="images/index/logo.png" alt="header-font-logo" style="width:220px; height:54px;"></a>
+      </div>
+      <div class="navigation wrapper">
+        <nav>
+          <a href="news.html">NEWS</a>
+          <a href="profile.html">PROFILE</a>
+          <a href="live.html">LIVE</a>
+          <a href="#">DISCOGRAPHY</a>
+          <a href="#">CONTACT</a>
+          <a href="#">GOODS</a>
+          <a href="#">BLOG </a>
+        </nav>
+        <div class="header-icon">
+          <a href="#"><img src="https://img.icons8.com/metro/26/000000/twitter.png" alt="twitter" style="width:21px; height:21px;"></a>
+          <a href="#"><img src="images/index/yt_icon_mono_light.png" alt="youtube" style="width:24px; height:18px;"></a>
+          <a href="#"><img src="images/index/ico_niconico_pc.png" alt="niconico"></a>
+        </div>
+      </div>
+    </header>  <!-- /header -->
+
+
+    <!-- flickity -->
+    <div class="flickity ">
+      <img src="images/index/slide0620b.jpg" alt="WorldEnd" style="width:960px; height:540px;">
+      <img src="images/index/Mafu-HP-TOP-06-2.jpg" alt="Kagurairo" style="width:960px; height:540px;">
+      <img src="images/index/e6ae2c75012183c030612cdc8497b692.jpg" alt="Hikirai" style="width:960px; height:540px;">
+    </div>
+    <script type="text/javascript">
+      // スライドコンテンツを後ほど操作するための配列 (グローバル変数)
+      var flickity = [];
+
+      // ページ内の[.flickity]のエレメントを取得する
+      var elms = document.getElementsByClassName( "flickity" ) ;
+
+      // [elms]全てに、ループ処理でFlickityを適用する
+      for( var i=0,l=elms.length; l>i; i++ ){
+        flickity[i] = new Flickity( elms[i] , {wrapAround: true, initialIndex: 1, contain: false, pageDots: false, prevNextButtons: false} ) ;
+      }
+    </script><!-- /flickity -->
+
+
+    <!-- youtube -->
+    <div class="yt">
+      <img src="images/index/tit_channel.png" alt="yt-mafumafu" style="width:441px; height:32px;">
+      <div class="yt-list wrapper">
+        <div class="yt-box yt-boxs">
+          <iframe width="217" height="123" src="https://www.youtube.com/embed/?list=PLLkGVD9RIO_BI66nhaUxFS8V72gl1tbyM&v=" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p>Music Video</p>
+        </div>
+        <div class="yt-box">
+          <iframe width="217" height="123" src="https://www.youtube.com/embed/?list=PLLkGVD9RIO_D68FR4jAQlBQ5uAKJc_LWW&v=" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p>歌ってみた</p>
+        </div>
+        <div class="yt-box">
+          <iframe width="217" height="123" src="https://www.youtube.com/embed/?list=PLLkGVD9RIO_AVZgiJ5Yjr5qLLA574Inf7&v=" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p>変な動画</p>
+        </div>
+        <div class="yt-box">
+          <iframe width="217" height="123" src="https://www.youtube.com/embed/?list=PLLkGVD9RIO_DMhx9rnG_YDLN_rG-cqefV&v=" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p>ゲーム実況</p>
+        </div>
+      </div>
+      <a href="https://www.youtube.com/channel/UCOTR1tcOAhjgi6YukrPpZxg"><img src="images/index/btn_yt.png" alt="yt-channel" style="width:110px; height:24px;"></a>
+    </div>  <!-- /youtube -->
+    <!-- NEWS -->
+    <div class="home-news wrapper">
+      <h1>NEWS</h1>
+      <article class="ar-news">
+        <a href="#">
+        <h2>2019.03.29</h2>
+        <h3>TVアニメ『かつて神だった獣たち』OP主題歌決定！</h3>
+        </a>
+      </article>
+      <article class="ar-news">
+        <a href="#">
+        <h2>2019.02.25</h2>
+        <h3>ひきフェス、6月23日に初のドーム公演開催決定！！</h3>
+        </a>
+      </article>
+      <article class="ar-news">
+        <a href="#">
+        <h2>2019.06.03</h2>
+        <h3>「引きこもりでも旅がしたい！」DVD第５弾〜ハワイ編〜発売決定！</h3>
+        </a>
+      </article>
+      <button type="button" name="button" class="btn-black">MORE ▶︎</button>
+      <div class="image-chair">
+        <img src="images/index/img_beru_c.png" alt="beru_hair" style="width:172px; height: 283px;">
+      </div>
+      <div class="image-black">
+        <img src="images/index/img_beru_black.png" alt="beru_black" style="width:185px; height:379px;">
+      </div>
+      <div class="image-white">
+        <img src="images/index/img_beru_white.png" alt="beru_white" style="width:154px; height:359px;">
+      </div>
+    </div>  <!-- /NEWS -->
+    <!-- LIVE -->
+    <div class="home-live wrapper">
+      <h1>LIVE</h1>
+      <article class="ar-live">
+        <a href="#">
+        <div class="sub-caption">
+          <p>ひきこもりでもLIVEがしたい！〜すーぱーまふまふわーるど@2019メットライフドーム〜</p>
+          <h2>2019.06.22(sat)</h2>
+        </div>
+        <h3>メットライフドーム（西武ドーム）</h3>
+        </a>
+      </article>
+      <button type="button" name="button" class="btn-black">MORE ▶︎</button>
+    </div>  <!-- /LIVE -->
+    <div class="column wrapper">
+      <!-- discography -->
+      <div class="home-discography">
+        <h1>DISCOGRAPHY</h1>
+        <!-- flickity -->
+        <div class="flickity2">
+          <img src="images/index/77ff30e7b67556447ee302bc207f4afd-1.jpg" alt="kagurairo" style="width:232px; height:232px;">
+          <img src="images/index/cdce3639f5d8c0600acde75a2a36310a.png" alt="traveller" style="width:232px; height:232px;">
+          <img src="images/index/resize_image02.jpg" alt="ashitairo" style="width:232px; height:232px;">
+          <img src="images/index/resize_image-1-1.jpeg" alt="anti1" style="width:232px; height:232px;">
+          <img src="images/index/resize_image-1.jpeg" alt="anti2" style="width:232px; height:232px;">
+        </div>
+        <script type="text/javascript">
+          // スライドコンテンツを後ほど操作するための配列 (グローバル変数)
+          var flickity = [];
+          // ページ内の[.flickity]のエレメントを取得する
+          var elms = document.getElementsByClassName( "flickity2" ) ;
+          // [elms]全てに、ループ処理でFlickityを適用する
+          for( var i=0,l=elms.length; l>i; i++ )
+          {
+            flickity[i] = new Flickity( elms[i] , {wrapAround: true, initialIndex: 0, contain: false, pageDots: false} ) ;
+          }
+        </script>  <!-- /flickity -->
+        <button type="button" name="button" class="btn-black" style="width:236px;height:28px;">MORE ▶︎</button>
+      </div>  <!-- /discography -->
+      <!-- twitter -->
+      <div class="home-twitter">
+        <a class="twitter-timeline" data-lang="ja" data-width="462" data-height="318" data-theme="light" data-link-color="#2B7BB9" data-chrome="nofooter" href="https://twitter.com/uni_mafumafu?ref_src=twsrc%5Etfw">Tweets by uni_mafumafu</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>  <!-- /twitter -->
+    </div>
+    <!-- home-link -->
+    <div class="home-link wrapper">
+      <a href="#"><img src="images/index/bn_mafumafu_website.jpg" alt="mafumafu_website" style="width:307px; height:81px;"></a>
+      <a href="#"><img src="images/index/bn_niconico.jpg" alt="niconico" style="width:307px; height:81px;"></a>
+      <a href="#"><img src="images/index/bn_line.jpg" alt="line" style="width:307px; height:81px;"></a>
+    </div>  <!-- /home-link -->
+
+    <!-- footer -->
+    <footer>
+      <div class="footer-content wrapper">
+        <div class="footer-icon">
+          <a href="#"><img src="images/index/Twitter_Logo_WhiteOnImage.png" alt="twitter" style="width:32px; height:32px; margin-right:2px"></a>
+          <a href="#"><img src="images/index/youtube_social_icon_red.png" alt="youtube" style="width:20px; height:14px; margin-right:6px;"></a>
+          <a href="#"><img src="images/index/ico_niconico.png" alt="niconico" style="width:24px; height:26px;"></a>
+        </div>
+        <div class="copyrights">
+          <small>&copy;2019 uni-mafumafu.jp</small>
+        </div>
+      </div>
+    </footer>  <!-- /footer -->
+
+
+  </body>
+</html>
