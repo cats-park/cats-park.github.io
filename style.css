@@ -1,0 +1,651 @@
+@charset "UTF-8";
+
+/* 共通部分------------------------------------------------------------------- */
+html {
+  font-size: 100%;
+}
+body {
+  font-family: YuGothic, 游ゴシック, Verdana, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ ProN", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #333;
+  max-width: 100%;
+  background-image:url(images/index/wall_30.png);
+  background-repeat: repeat;
+}
+a {
+  text-decoration: none;
+}
+img {
+  vertical-align: middle;
+}
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+h1 {
+  font-family: 'Aguafina Script', sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58px;
+}
+h2 { /*日付関連*/
+  font-style: italic;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #676767;
+}
+h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333;
+}
+p {
+  text-decoration: none;
+}
+
+/* HEADER------------------------------------------------------------------- */
+header {
+  height: 182px;
+  border-bottom: 1px solid #000;
+
+}
+.home-logo {
+  padding-top: 30px;
+  text-align: left;
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+
+nav a {
+  color: black;
+  font-family: "Maven Pro", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 20px;
+  font-size: 14px;
+  margin-right: 20px;
+}
+.header-icon {
+}
+.header-icon a {
+  margin-left: 6px;
+}
+
+/* FLICKITY------------------------------------------------------------------- */
+.flickity {
+  border-bottom: 1px solid #000;
+}
+.flickity img {
+  margin: 22px 11px 22px 11px;
+}
+
+/* YOUTUBE------------------------------------------------------------------- */
+.yt {
+  max-width: 100%;
+  margin-top: 36px;
+  height: 389px;
+  background-color: #000;
+  text-align: center;
+}
+.yt-list {
+  display: flex;
+}
+.yt-box {
+  padding: 10px 6.5px;
+  border-right: 1px solid #fff;
+}
+.yt-boxs {
+  border-left: 1px solid #fff;
+}
+.yt-box iframe {
+  border: 1px solid #fff;
+}
+.yt img {
+  margin: 41px 0;
+}
+.yt-box p {
+  color: #fff;
+}
+.yt a {
+  margin: 39px 0;
+}
+
+/* NEWS, LIVE, DISCOGRAPHY------------------------------------------------------------------- */
+.home-news{
+  margin: 60px auto 62px;
+  border: 1px solid #000;
+  position: relative;
+}
+.home-live {
+  margin: 62px auto;
+  border: 1px solid #000;
+}
+.home-discography {
+  width: 462px;
+  height: 472px;
+  border: 1px solid #000;
+}
+.home-news h1, .home-live h1, .home-discography h1 {
+  margin: 38px auto 46px;
+}
+.home-news article, .home-live article  {
+  display: inline-block;
+  transition: 0.5s ;
+  margin: 0 148px;
+  width: 666px;
+  height:65px;
+  border-bottom: 1px solid #000;
+}
+.ar-news h2 {
+  text-align: left;
+  padding: 14px 0 2px;
+}
+.ar-news h3{
+  text-align: left;
+  padding-bottom: 14px;
+}
+.ar-live h3 {
+  text-align: left;
+  padding: 10px 0 12px;
+}
+.ar-live p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  color: #fff;
+  padding: 3px 5px;
+  background-color: #DE416D;
+  border-radius: 5px;
+  margin-right: 3px;
+}
+.sub-caption {
+  display: flex;
+}
+.home-news article:hover, .home-live article:hover {
+  opacity: 0.7; /*透過*/
+}
+.btn-black {
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.3s;
+  width:260px;
+  height: 28px;
+  margin: 52px auto 56px;
+  background-color: #333;
+  border: 2px solid #333;
+}
+.home-discography .btn-black  {
+  margin: 26px auto 56px;
+}
+.btn-black  {
+  display: inline-block;
+  width:260px;
+  height: 28px;
+  vertical-align: middle;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  color: #fff;
+}
+.btn-black:hover {
+  border: 2px solid #333;
+  background-color:  #fff;
+  color: #333;
+}
+.home-discography .flickity2 {
+  margin: auto;
+  width: 236px;
+  height: 236px;
+  border: 2px solid #000;
+}
+.image-chair, .image-black, .image-white {
+  position: absolute;
+}
+.image-chair {
+  top: -36px;
+  left: 840px;
+}
+.image-black {
+  top: 267px;
+  left: -55px;
+}
+.image-white {
+  top: 492px;
+  left: 849px;
+}
+
+
+/*TWITTER------------------------------------------------------------------- */
+.column {
+  display: flex;
+  justify-content: space-between;
+  margin: 62px auto 82px;
+}
+.home-twitter {
+  width: 462px;
+  height: 318px;
+}
+
+/*HOME-LINK------------------------------------------------------------------- */
+.home-link {
+  margin: 82px auto;
+  display: flex;
+  justify-content: space-between;
+}
+.home-link img {
+  border: 1px solid #000;
+}
+
+/*FOOTER------------------------------------------------------------------- */
+footer {
+  margin: 0 auto;
+  height: 90px;
+  background-color: #000;
+}
+.footer-content {
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer small {
+  font-size: 11px;
+  line-height: 11px;
+  color: #fff;
+}
+
+/* NEWS-ARTICLE ------------------------------------------------------------------- */
+.news-article {
+}
+.news-article span {
+  color: #df416d;
+}
+.ar-title{
+  height: 174px;
+  border-bottom: 1px solid #C8C8C8;
+}
+.ar-titles {
+  position: relative;
+}
+.news-girl {
+  position: absolute;
+  top: 46px;
+  left: 600px;
+}
+.news-article article {
+  height: 192px;
+  border-bottom: 1px solid #C8C8C8;
+}
+.ar-title h1 {
+  text-align: left;
+  padding-top: 62px;
+}
+.news-article h1 {
+  font-family: 'Aguafina Script', sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 65px;
+  color: #333;
+}
+.news-article article h2 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 13px;
+  color: #808080;
+}
+.news-article article h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  color: #000;
+  margin: 11px 0 15px;
+}
+.news-article article p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #080808;
+}
+.news-article article h2, .news-article article h3, .news-article article p {
+  text-align: left;
+}
+.news-article article a {
+  display: inline-block;
+  display: flex;
+  padding: 21px 0;
+}
+.news-article article img {
+  width:150px;
+  height: 150px;
+}
+.ar-detail {
+  width: 425px;
+  height: 150px;
+  margin: 28px 0 0 25px;
+}
+.navi {
+  height: 120px;
+}
+
+/* PROFILE ------------------------------------------------------------------- */
+.profile {
+  max-width: 500px;
+  margin: 0 auto 50px;
+  text-align: center;
+  position: relative;
+}
+.profile span {
+  color: #df416d;
+}
+.profile h1 {
+  margin: 62px 0 54px;
+}
+.profile .pro-mafumafu {
+  border: 1.7px solid #000;
+  position: relative;
+  z-index: 30;
+}
+.profile h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  color: #333;
+  padding: 25px 0 28px;
+  text-align: left;
+}
+.profile p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #333;
+  text-align: left;
+}
+.profile .image-chair, .profile .image-black, .profile .image-white {
+  position: absolute;
+  z-index: 20;
+}
+.profile .image-chair {
+  top: 670px;
+  left: -197px;
+}
+.profile .image-black {
+  top: -32px;
+  left: -206px;
+}
+.profile .image-white {
+  top: 144px;
+  left: 462px;
+}
+
+/* LIVE ------------------------------------------------------------------- */
+.live {
+  margin: 46px auto;
+  position: relative;
+}
+.live .girl {
+  position: absolute;
+  top:11px;
+  left: 875px;
+}
+.live h1 {
+  font-family: 'Aguafina Script', sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 65px;
+  color: #333;
+  padding: 10px 0 50px;
+}
+.live span {
+  color: #df416d;
+}
+.live-container {
+  display: flex;
+}
+.live-list {
+  padding-top: 20px;
+}
+.live aside {
+  width:249px;
+  height: 300px;
+  padding: 20px 0 60px;
+  border-right: 1px solid #C8C8C8;
+}
+.mitei {
+  width:208px;
+  height:34px;
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.mitei h2 {
+  font-family: YuGothic, 游ゴシック, Verdana, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ ProN", sans-serif;
+  color: #fff;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  margin-left: 15px;
+}
+.mitei img {
+  margin-right: 15px;
+}
+.live-main p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #333;
+  margin: 20px 0 0 40px;
+}
+
+/* DISCOPGRAPHY ------------------------------------------------------------------- */
+.discography {
+  position: relative;
+  display: flex;
+}
+.discography h1 {
+  font-family: 'Aguafina Script', sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 65px;
+  color: #333;
+  text-align: left;
+  margin-top: 62px;
+}
+.discography span {
+  color: #df416d;
+  position: relative;
+}
+.discography img {
+  position: absolute;
+  top: 29px;
+  left: 860px;
+}
+.disc-container {
+  display: flex;
+  margin: 46px auto;
+  position: relative;
+}
+.disc-list {
+  width:172px;
+  margin-top: 21px;
+  text-align: left;
+}
+.disc-list .btn-black {
+  display: inline-block;
+  transition: 0.3s;
+  width:151px;
+  height: 30px;
+  background-color: #333;
+  border: 2px solid #333;
+  vertical-align: middle;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 1px;
+  color: #fff;
+  margin: 0 0 15px 0;
+}
+.btn-black:hover {
+  border: 2px solid #333;
+  background-color:  #fff;
+  color: #333;
+}
+.disc-detail {
+  width:270px;
+  border-right: 1px solid #C8C8C8;
+  border-left: 1px solid #C8C8C8;
+}
+.disc-detail article {
+  width:227px;
+  text-align: center;
+  margin: 21px auto 0;
+}
+.disc-detail .articles {
+  margin-top: 31px;
+}
+.disc-detail article img {
+  border: 1px solid #333;
+}
+.disc-detail article .articles img {
+  margin-top: 10px;
+}
+.disc-detail h2 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: #808080;
+  margin-top: 2px;
+}
+.disc-detail h3 {
+  font-family: YuGothic, 游ゴシック, Verdana, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ ProN", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #333;
+  padding-bottom: 10px;
+}
+#btn-mini {
+  display: inline-block;
+  text-align: center;
+  width:30px;
+  height:18px;
+  padding-top:3px;
+  background-color: #808080;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  color: #fff;
+}
+.disc-detail #btn-mini {
+  margin-left:8px;
+}
+.disc-days {
+  display: flex;
+  justify-content: center;
+  margin: 8px 0 8px;
+}
+.disc-detail span {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 12px;
+  color: #ff0000;
+}
+.disc-main {
+  text-align: left;
+  width:480px;
+  margin: 21px 0 0 40px;
+}
+.disc-main h2 {
+  margin-bottom: 30px;
+}
+.disc-main h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  color: #333;
+  padding: 7px 0;
+}
+.disc-main img {
+  border: 2px solid #333;
+  margin-bottom: 26px;
+}
+.disc-main button {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #fff;
+}
+
+/* DISCOPGRAPHY-dvd ------------------------------------------------------------------- */
+.discography .disc-dvd {
+  display: flex;
+}
+.disc-dvd p {
+  font-family: american-typewriter-condensed-light, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: #333;
+  margin-left: 20px;
+  margin-top: 83px;
+}
+.detail-dvd .articles {
+  margin-top: 41px;
+}
+.main-dvd {
+  letter-spacing: 0.5px;
+}
+.main-dvd h3 {
+  letter-spacing: normal;
+}
+.btns-black {
+  display: flex;
+  justify-content: flex-start;
+}
+.btns-black .btn-black {
+  margin:30px 0 0 0;
+}
+.btns-black .btn-black2 {
+  margin-left: 12px;
+}
+.detail-dvd #btn-mini, .main-dvd #btn-mini {
+  display: inline-block;
+  text-align: center;
+  width:36px;
+  height:18px;
+  padding-top:3px;
+  background-color: #808080;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  color: #fff;
+}
