@@ -81,6 +81,24 @@ nav a {
   margin-left: 6px;
 }
 
+/*FOOTER------------------------------------------------------------------- */
+footer {
+  margin: 0 auto;
+  height: 90px;
+  background-color: #000;
+}
+.footer-content {
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer small {
+  font-size: 11px;
+  line-height: 11px;
+  color: #fff;
+}
+
 /* FLICKITY------------------------------------------------------------------- */
 .flickity {
   border-bottom: 1px solid #000;
@@ -246,24 +264,6 @@ nav a {
 }
 .home-link img {
   border: 1px solid #000;
-}
-
-/*FOOTER------------------------------------------------------------------- */
-footer {
-  margin: 0 auto;
-  height: 90px;
-  background-color: #000;
-}
-.footer-content {
-  height: 90px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-footer small {
-  font-size: 11px;
-  line-height: 11px;
-  color: #fff;
 }
 
 /* NEWS-ARTICLE ------------------------------------------------------------------- */
@@ -486,7 +486,7 @@ footer small {
   position: relative;
 }
 .disc-list {
-  width:172px;
+  width:174px;
   margin-top: 21px;
   text-align: left;
 }
@@ -508,16 +508,16 @@ footer small {
 }
 .btn-black:hover {
   border: 2px solid #333;
-  background-color:  #fff;
+  background-color: #fff;
   color: #333;
 }
 .disc-detail {
-  width:270px;
+  width:273px;
   border-right: 1px solid #C8C8C8;
   border-left: 1px solid #C8C8C8;
 }
-.disc-detail article {
-  width:227px;
+.disc-detail article, .disc-detail .articles {
+  width:229px;
   text-align: center;
   margin: 21px auto 0;
 }
@@ -526,9 +526,6 @@ footer small {
 }
 .disc-detail article img {
   border: 1px solid #333;
-}
-.disc-detail article .articles img {
-  margin-top: 10px;
 }
 .disc-detail h2 {
   font-style: normal;
@@ -550,9 +547,7 @@ footer small {
 #btn-mini {
   display: inline-block;
   text-align: center;
-  width:30px;
-  height:18px;
-  padding-top:3px;
+  padding:3px 8px 3px 8px;
   background-color: #808080;
   font-style: normal;
   font-weight: 400;
@@ -603,11 +598,11 @@ footer small {
   color: #fff;
 }
 
-/* DISCOPGRAPHY-dvd ------------------------------------------------------------------- */
-.discography .disc-dvd {
+/* DISCOPGRAPHY-dvd,cd,writter ------------------------------------------------------------------- */
+.disc-title{
   display: flex;
 }
-.disc-dvd p {
+.disc-title p {
   font-family: american-typewriter-condensed-light, sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -617,7 +612,7 @@ footer small {
   margin-left: 20px;
   margin-top: 83px;
 }
-.detail-dvd .articles {
+.disc-detail .articles {
   margin-top: 41px;
 }
 .main-dvd {
@@ -636,16 +631,170 @@ footer small {
 .btns-black .btn-black2 {
   margin-left: 12px;
 }
-.detail-dvd #btn-mini, .main-dvd #btn-mini {
+.main-writter .btn-writter {
+  margin-top:30px;
+}
+
+/* CONTACT ------------------------------------------------------------------- */
+.contact {
+  position: relative;
+}
+.contact .boy-img {
+  position: absolute;
+  top: -36px; /* 26-62 */
+  left: 794px;
+}
+.contact h1 {
+  font-family: 'Aguafina Script', sans-serif;
+  font-style: normal;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 65px;
+  color: #333;
+  margin-top: 62px;
+  margin-bottom: 76px;
+}
+.contact span {
+  color: #df416d;
+}
+.cont-main {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: left;
+}
+.cont-main h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  color: #333;
+}
+.cont-main p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #333;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.contact form {
+
+}
+.contact form label {
+  font-weight: bold;
+}
+.contact form .four-num {
+  margin-left: 7px;
+}
+.contact form .form-name {
   display: inline-block;
-  text-align: center;
-  width:36px;
-  height:18px;
-  padding-top:3px;
-  background-color: #808080;
+  margin-top: 10px;
+}
+.contact form textarea {
+  margin-bottom: 10px;
+}
+.contact form input, .contact form textarea {
+  border: 2px solid #333;
+}
+.contact form .in-box {
+  background-color: #F7F7F7;
+}
+.contact form .btn-black {
+  margin: 10px 0 112px 0;
+}
+
+/* CONTACT ------------------------------------------------------------------- */
+.goods {
+  position: relative;
+  margin-bottom: 45px;
+}
+.goods .chouchin {
+  position: absolute;
+  top: -26px; /* 26-62 */
+  left: 937px;
+}
+.goods h1 {
+  font-family: 'Aguafina Script', sans-serif;
+  font-style: normal;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 65px;
+  color: #333;
+  margin-top: 62px;
+  margin-bottom: 46px;
+}
+.goods span {
+  color: #df416d;
+}
+.goods-container {
+  display: flex;
+}
+.goods-list {
+  margin-top: 20px;
+  padding-right: 35px;
+}
+.mitei { /* サイズ以外は上で設定済み */
+  width:156px;
+  height: 34px;
+}
+.goods-list .mitei h2 {
+  font-family: YuGothic, 游ゴシック, Verdana, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ ProN", sans-serif;
+  color: #fff;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+}
+.goods-main {
+  border-left: 1px solid #C8C8C8;
+  padding: 20px 0 42px 37px;
+  margin-bottom: 45px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  align-items: flex-start;
+}
+.goods-main p {
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 2px;
   font-style: normal;
   font-weight: 400;
   font-size: 10px;
-  line-height: 12px;
+  line-height: 26px;
   color: #fff;
+  background-color: #333;
+  text-align: left;
+}
+.goods-main img {
+  border: 2px solid #333;
+  margin-bottom: 6px;
+}
+.goods-main h3 {
+  font-family: YuGothic, 游ゴシック, Verdana, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ ProN", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+  color: #333;
+  text-align: center;
+}
+.goods-main h3 span {
+  color: #ff0000;
+}
+.live-items p {
+  width: 149px;
+  height: 26px;
+}
+.apa-items p {
+  width: 49px;
+  height: 26px;
+}
+.live-items, .apa-items {
+  display: flex;
+  flex-direction: column;
+  width: 218px;
+  margin-bottom: 41px;
 }
